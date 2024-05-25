@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+  <title>Carbon Footprint Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Carbon Footprint Calculator</h1>
+    <form id="calculatorForm">
+      <div class="form-group">
+        <label for="electricity">Electricity Usage (kWh/month):</label>
+        <input type="number" id="electricity" name="electricity" required>
+      </div>
+      <div class="form-group">
+        <label for="carTravel">Car Travel (miles/month):</label>
+        <input type="number" id="carTravel" name="carTravel" required>
+      </div>
+      <div class="form-group">
+        <label for="airTravel">Air Travel (miles/year):</label>
+        <input type="number" id="airTravel" name="airTravel" required>
+      </div>
+      <button type="button" onclick="calculateFootprint()">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
