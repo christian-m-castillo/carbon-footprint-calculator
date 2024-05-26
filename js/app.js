@@ -20,5 +20,5 @@ function calculateFootprint() {
 
   // Display the result
 
-  document.getElementById('result').innerHTML = `Your estimated annual carbon footprint is approximately <span class="result-number">${totalFootPrint.toFixed(2)} kg C02</span>. The global annual average per person is 4,800 kg.`; 
+  document.getElementById('result').innerText = `Your estimated annual carbon footprint is approximately ${totalFootPrint.toFixed(2)} kg C02. The global annual average per person is 4,800 kg.`; 
 }
